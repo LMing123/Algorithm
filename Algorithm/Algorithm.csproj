@@ -45,13 +45,13 @@
   <ItemGroup>
     <Compile Include="code\0_1_Bag.cs" />
     <Compile Include="code\Program.cs" />
-    <Compile Include="code\QuickSort.cs" />
+    <Compile Include="code\Sort\QuickSort.cs" />
     <Compile Include="code\Solution13.cs" />
     <Compile Include="code\Solution_15.cs" />
     <Compile Include="code\Solution_14.cs" />
     <Compile Include="code\Solution_16.cs" />
     <Compile Include="code\Solution_8.cs" />
-    <Compile Include="code\StackSort.cs" />
+    <Compile Include="code\Sort\StackSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

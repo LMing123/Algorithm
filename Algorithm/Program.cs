@@ -21,7 +21,7 @@ namespace Algorithm
             string[] s = { "aa", "ab" };
             int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
             //int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
-            var shit=QuickSort.Fuck(ref nums,0,nums.Length);
+            var shit=StackSort.Fuck( nums);
             Console.WriteLine(shit);
             Console.ReadLine();
 
