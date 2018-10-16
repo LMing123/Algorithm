@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.code
+namespace Algorithm.code
 {
     public class QuickSort
     {
-        private static void Sort(ref int[] nums,int left,int right)
+        private static int Sort(ref int[] nums,int left,int right)
         {
-            if (left == right)
-                return;
             int key = nums[left];
             int positon = left;
             while(left<right)
@@ -47,14 +45,18 @@ namespace ConsoleApp1.code
                     left++;
                 }
             }
-            Sort(ref nums, 0, positon);
-            Sort(ref nums, positon, right);
+            return right;
 
         }
-        public static int[] Fuck(int[] nums)
+
+        public static int[] Fuck(ref int[] nums,int left,int right)
         {
             int[] result = nums;
-            Sort(ref result, 0, nums.Length - 1);
+            if (left >= right)
+                return result;
+            int position=Sort(ref result, left, nums.Length - 1);
+            Fuck(ref result, left, position - 1);
+            Fuck(ref result,  position + 1,right);
             return result;
         }
     }

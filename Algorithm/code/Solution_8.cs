@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.code
+namespace Algorithm.code
 {
     /// <summary>
     /// 实现 atoi，将字符串转为整数。

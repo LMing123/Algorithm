@@ -1,8 +1,8 @@
-﻿using ConsoleApp1.code;
+﻿using Algorithm.code;
 using System;
 using System.Collections.Generic;
 
-namespace ConsoleApp1
+namespace Algorithm
 {
     class Program
     {
@@ -21,7 +21,7 @@ namespace ConsoleApp1
             string[] s = { "aa", "ab" };
             int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
             //int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
-            var shit=QuickSort.Fuck(nums);
+            var shit=QuickSort.Fuck(ref nums,0,nums.Length);
             Console.WriteLine(shit);
             Console.ReadLine();
 

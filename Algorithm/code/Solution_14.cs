@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.code
+namespace Algorithm.code
 {
     /// <summary>
     /// 14. 最长公共前缀
