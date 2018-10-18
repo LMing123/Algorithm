@@ -1,4 +1,5 @@
 ﻿using Algorithm.code;
+using Algorithm.Code.LeetCode;
 using System;
 using System.Collections.Generic;
 
@@ -21,7 +22,7 @@ namespace Algorithm
             string[] s = { "aa", "ab" };
             int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
             //int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
-            var shit=StackSort.Fuck( nums);
+            var shit = Solution.LetterCombinations("23");
             Console.WriteLine(shit);
             Console.ReadLine();
 

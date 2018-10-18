@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F9EABC13-AE69-49B5-B5FC-B92D7641E9F3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>Algorithm</RootNamespace>
+    <AssemblyName>Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="code\0_1_Bag.cs" />
-    <Compile Include="code\Program.cs" />
-    <Compile Include="code\Sort\QuickSort.cs" />
-    <Compile Include="code\Solution13.cs" />
-    <Compile Include="code\Solution_15.cs" />
-    <Compile Include="code\Solution_14.cs" />
-    <Compile Include="code\Solution_16.cs" />
-    <Compile Include="code\Solution_8.cs" />
-    <Compile Include="code\Sort\StackSort.cs" />
+    <Compile Include="Code\0_1_Bag.cs" />
+    <Compile Include="Code\LeetCode\Solution_17.cs" />
+    <Compile Include="Code\Program.cs" />
+    <Compile Include="Code\Sort\QuickSort.cs" />
+    <Compile Include="Code\Solution13.cs" />
+    <Compile Include="Code\Solution_15.cs" />
+    <Compile Include="Code\Solution_14.cs" />
+    <Compile Include="Code\Solution_16.cs" />
+    <Compile Include="Code\Solution_8.cs" />
+    <Compile Include="Code\Sort\StackSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
