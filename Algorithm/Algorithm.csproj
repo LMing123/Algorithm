@@ -44,14 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\0_1_Bag.cs" />
+    <Compile Include="Code\LeetCode\Class1.cs" />
     <Compile Include="Code\LeetCode\Solution_17.cs" />
+    <Compile Include="Code\LeetCode\Solution_20.cs" />
     <Compile Include="Code\Program.cs" />
     <Compile Include="Code\Sort\QuickSort.cs" />
-    <Compile Include="Code\Solution13.cs" />
-    <Compile Include="Code\Solution_15.cs" />
-    <Compile Include="Code\Solution_14.cs" />
-    <Compile Include="Code\Solution_16.cs" />
-    <Compile Include="Code\Solution_8.cs" />
+    <Compile Include="Code\LeetCode\Solution13.cs" />
+    <Compile Include="Code\LeetCode\Solution_15.cs" />
+    <Compile Include="Code\LeetCode\Solution_14.cs" />
+    <Compile Include="Code\LeetCode\Solution_16.cs" />
+    <Compile Include="Code\LeetCode\Solution_8.cs" />
     <Compile Include="Code\Sort\StackSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

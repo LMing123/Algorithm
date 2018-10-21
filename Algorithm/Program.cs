@@ -17,16 +17,106 @@ namespace Algorithm
         }
         static void Main(string[] args)
         {
-
-
-            string[] s = { "aa", "ab" };
-            int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
-            //int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
-            var shit = Solution.LetterCombinations("23");
-            Console.WriteLine(shit);
+            
+            Console.WriteLine(Fuck());
+            //string[] s = { "aa", "ab" };
+            //int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
+            ////int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
+            //var shit = Solution_20.Fuck("()[]{}");
+            //Console.WriteLine(shit);
             Console.ReadLine();
 
 
+        }
+        static bool Fuck()
+        {
+            string ori = Console.ReadLine();
+            if (ori.Length == 0)
+            {
+                return false;
+            }
+            string[] s = ori.Split(',');
+            if (s[0].Length == 0)
+            {
+                return false;
+            }
+            string[] s_nums = s[0].Split(' ');
+            if (s[1].Length == 0)
+            {
+                return false;
+            }
+            int N = 0;
+            if(!int.TryParse(s[1],out N))
+            {
+                return false;
+            }
+            int[] nums = new int[s[0].Length];
+            for (int i = 0; i < s_nums.Length; i++)
+            {
+                if(!int.TryParse(s_nums[i],out nums[i]))
+                {
+                    return false;
+                }
+            }
+            Array.Sort(nums);
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int temp = nums[i];
+                int swap = nums[i];
+                nums[i] = nums[0];
+                nums[0] = swap;
+                int front = 1;
+                int tail = nums.Length - 1;
+                while (front < tail)
+                {
+                    if (nums[front] + nums[tail] == N - temp)
+                    {
+                        return true;
+                    }
+                    else if (nums[front] + nums[tail] > N - temp)
+                    {
+                        tail--;
+                    }
+                    else
+                    {
+                        front++;
+                    }
+                }
+                swap = nums[i];
+                nums[i] = nums[0];
+                nums[0] = swap;
+
+            }
+            return false;
+
+        }
+
+//        int front = 0;
+//        int tail = nums.Length - 1;
+//        int mid = (tail - front) / 2;
+//            while(mid>front&&mid<tail&&tail> front)
+//            {
+//                if(nums[front]+nums[tail]>N)
+//                {
+//                    tail--;
+//                }
+//}
+static bool Shit(int[] nums, int N)
+        {
+            for(int i=0;i<nums.Length;i++)
+            {
+                for(int j=i+1;j<nums.Length;j++)
+                {
+                    for(int k=j+1;k<nums.Length;k++)
+                    {
+                        if(nums[i]+nums[j]+nums[k]==N)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
         }
     }
     //List<Good> goods = new List<Good> //（5，12），（4，3），（7，10），（2，3），（6，6）。
