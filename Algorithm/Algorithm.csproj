@@ -46,6 +46,8 @@
     <Compile Include="Code\0_1_Bag.cs" />
     <Compile Include="Code\LeetCode\Class1.cs" />
     <Compile Include="Code\LeetCode\Solution_17.cs" />
+    <Compile Include="Code\LeetCode\Solution_18.cs" />
+    <Compile Include="Code\LeetCode\Solution_19.cs" />
     <Compile Include="Code\LeetCode\Solution_20.cs" />
     <Compile Include="Code\Program.cs" />
     <Compile Include="Code\Sort\QuickSort.cs" />
@@ -60,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\LeetCode\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

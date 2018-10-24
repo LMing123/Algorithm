@@ -17,12 +17,20 @@ namespace Algorithm
         }
         static void Main(string[] args)
         {
-            
-            Console.WriteLine(Fuck());
+
+            List<List<int>> list = new List<List<int>>()
+           {
+               new List<int>{ 1,2,3,4,5},
+               new List<int>{ 1,2,3,4,5},
+
+           };
+
+            List<int> fucl = new List<int> { 1, 2, 3, 4, 5 };
+            //var shit= list.Contains(fucl);
             //string[] s = { "aa", "ab" };
             //int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
-            ////int[] nums ={ 1, 2, 4, 8, 16, 32, 64, 128 };
-            //var shit = Solution_20.Fuck("()[]{}");
+            int[] nums ={ 5, 5, 3, 5, 1, -5, 1, -2 };
+            var shit = Solution_18.Fuck(nums,4);
             //Console.WriteLine(shit);
             Console.ReadLine();
 
