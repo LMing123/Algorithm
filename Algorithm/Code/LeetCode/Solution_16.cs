@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithm.code
+namespace Algorithm.Code
 {
     public class Solution_16
     {

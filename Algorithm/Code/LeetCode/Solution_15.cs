@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algorithm.code
+namespace Algorithm.Code
 {
     /// <summary>
     /// 15. 三数之和

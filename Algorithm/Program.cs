@@ -1,8 +1,8 @@
-﻿using Algorithm.code;
+﻿using Algorithm.Code;
 using Algorithm.Code.LeetCode;
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 namespace Algorithm
 {
     class Program
@@ -25,13 +25,20 @@ namespace Algorithm
 
            };
 
-            List<int> fucl = new List<int> { 1, 2, 3, 4, 5 };
-            //var shit= list.Contains(fucl);
-            //string[] s = { "aa", "ab" };
-            //int[] nums ={ 49, 38, 65, 97, 76, 13, 27 };
-            int[] nums ={ 5, 5, 3, 5, 1, -5, 1, -2 };
-            var shit = Solution_18.Fuck(nums,4);
+            //  var result = RecursionArrange.Fuck(s);
+            //string s = "barfoothefoobarman";
+            // string[] words = { "foo", "bar" };  
+            //string s = "wordgoodgoodgoodbestword";
+            //string[] words = { "word", "good", "best", "good" };
+
+            int[] nums = { 4,2,0,2,3,2,0};
+            Solution_31.Fuck(ref nums);
+
+            //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            //var shit = Solution_29.Fuck(-2147483648,-1);
             //Console.WriteLine(shit);
+         //   int i = 1<<31;
+           // Console.Write(i);
             Console.ReadLine();
 
 

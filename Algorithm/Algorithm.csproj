@@ -32,6 +32,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,12 +64,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\0_1_Bag.cs" />
-    <Compile Include="Code\LeetCode\Class1.cs" />
+    <Compile Include="Code\Class1.cs" />
     <Compile Include="Code\LeetCode\Solution_17.cs" />
     <Compile Include="Code\LeetCode\Solution_18.cs" />
     <Compile Include="Code\LeetCode\Solution_19.cs" />
+    <Compile Include="Code\LeetCode\Solution_22.cs" />
+    <Compile Include="Code\LeetCode\Solution_24.cs" />
+    <Compile Include="Code\LeetCode\Solution_21.cs" />
     <Compile Include="Code\LeetCode\Solution_20.cs" />
+    <Compile Include="Code\LeetCode\Solution_26.cs" />
+    <Compile Include="Code\LeetCode\Solution_27.cs" />
+    <Compile Include="Code\LeetCode\Solution_28.cs" />
+    <Compile Include="Code\LeetCode\Solution_29.cs" />
+    <Compile Include="Code\LeetCode\Solution_30.cs" />
+    <Compile Include="Code\LeetCode\Solution_31.cs" />
     <Compile Include="Code\Program.cs" />
+    <Compile Include="Code\RecursionArrange.cs" />
     <Compile Include="Code\Sort\QuickSort.cs" />
     <Compile Include="Code\LeetCode\Solution13.cs" />
     <Compile Include="Code\LeetCode\Solution_15.cs" />
@@ -63,8 +93,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Code\LeetCode\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

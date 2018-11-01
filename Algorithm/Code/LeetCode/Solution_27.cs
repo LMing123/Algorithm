@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 namespace Algorithm.Code.LeetCode
 {
     /// <summary>
-    /// 26. 删除排序数组中的重复项
+    /// 27. 移除元素
     /// </summary>
-    public class Solution_26
+    public class Solution_27
     {
-        public static int Fuck(int[] nums)
+        public static int Fuck(ref int[] nums,int val)
         {
-            if (nums.Length == 0)
+            int length = nums.Length;
+            if (length == 0)
                 return 0;
-            int length = 1;
+            length = 0;
             int shit = nums[0];
-            for (int i = 0; i < nums.Length; i++)
+            for(int i=0;i<nums.Length;i++)
             {
-                if (nums[i] != shit)
+                if(nums[i]!=val)
                 {
                     nums[length] = nums[i];
-                    shit = nums[i];
                     length++;
                 }
             }

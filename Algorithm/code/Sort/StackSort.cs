@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Algorithm.code
+namespace Algorithm.Code
 {
     public class StackSort
     {
