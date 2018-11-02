@@ -31,15 +31,14 @@ namespace Algorithm
             //string s = "wordgoodgoodgoodbestword";
             //string[] words = { "word", "good", "best", "good" };
 
-            int[] nums = { 4,2,0,2,3,2,0};
-            Solution_31.Fuck(ref nums);
+            var shit=Solution_32.Fuck(")()())");
 
             //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //var shit = Solution_29.Fuck(-2147483648,-1);
             //Console.WriteLine(shit);
          //   int i = 1<<31;
            // Console.Write(i);
-            Console.ReadLine();
+             Console.ReadLine();
 
 
         }

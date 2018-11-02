@@ -44,7 +44,7 @@ namespace Algorithm.Code.LeetCode
             }
 
 
-            Reverse(nums,0);
+            Reverse(ref nums, 0);
         }
 
         public static void Reverse(ref int[] nums, int start)
