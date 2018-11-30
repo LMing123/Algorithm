@@ -8,11 +8,42 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_32
     {
+        /// <summary>
+        /// fuck 搁置
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public static int Fuck(string s)
         {
-            Stack<char> shit = new Stack<char>();
-            Stack<char> s_shit = new Stack<char>();
+            List<string> list = new List<string>();
+            int start = 0;
+            int length = 1;
+            for(int i=0;i<s.Length;i++)
+            {
+                if(i+1>=s.Length)
+                {
+                    list.Add(s.Substring(start, s.Length - start));
+                    break;
+                }
 
+                if (s[i] == ')' &&s[i+1]=='(')
+                {
+                    list.Add(s.Substring(start, length));
+                    start = i+1;
+                    length = 1;
+                }
+                else
+                {
+                    length++;
+                }
+            }
+
+            return 0;
+        }
+        public static int Old_Fuck(string s)
+        {
+            Stack<char> shit = new Stack<char>();         
+            
             int result = 0;
             int count = 0;
             for (int i = 0; i < s.Length; )

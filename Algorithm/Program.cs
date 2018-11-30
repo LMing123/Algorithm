@@ -31,7 +31,7 @@ namespace Algorithm
             //string s = "wordgoodgoodgoodbestword";
             //string[] words = { "word", "good", "best", "good" };
 
-            var shit=Solution_32.Fuck(")()())");
+            var shit=Solution_33.Fuck(new int[]{ 4,5,6,7,0,1,2},5);
 
             //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //var shit = Solution_29.Fuck(-2147483648,-1);
