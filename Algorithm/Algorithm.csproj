@@ -80,6 +80,7 @@
     <Compile Include="Code\LeetCode\Solution_31.cs" />
     <Compile Include="Code\LeetCode\Solution_32.cs" />
     <Compile Include="Code\LeetCode\Solution_33.cs" />
+    <Compile Include="Code\LeetCode\Solution_34.cs" />
     <Compile Include="Code\Program.cs" />
     <Compile Include="Code\RecursionArrange.cs" />
     <Compile Include="Code\Sort\QuickSort.cs" />
