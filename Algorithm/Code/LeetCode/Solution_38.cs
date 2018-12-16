@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Algorithm.Code.LeetCode
 {
+    /// <summary>
+    /// 38. 报数
+    /// </summary>
     public class Solution_38
     {
         public static string Fuck(int n)
