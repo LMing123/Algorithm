@@ -25,7 +25,7 @@ namespace Algorithm
 
            };
             //int[] nums = { 5, 7, 7, 8, 8, 10 };
-           int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+           int[] nums = {9};
             int target = 0;
 
             //  var result = RecursionArrange.Fuck(s);
@@ -34,7 +34,7 @@ namespace Algorithm
             string s = "a b";
             //string[] words = { "word", "good", "best", "good" };
 
-            var shit=Solution_58.Fuck(s);
+            var shit=Solution_66.Fuck(nums);
 
             //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //var shit = Solution_29.Fuck(-2147483648,-1);
