@@ -31,10 +31,10 @@ namespace Algorithm
             //  var result = RecursionArrange.Fuck(s);
             //string s = "barfoothefoobarman";
             // string[] words = { "foo", "bar" };  
-            //string s = "wordgoodgoodgoodbestword";
+            string s = "a b";
             //string[] words = { "word", "good", "best", "good" };
 
-            var shit=Solution_53.Fuck(nums);
+            var shit=Solution_58.Fuck(s);
 
             //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //var shit = Solution_29.Fuck(-2147483648,-1);
