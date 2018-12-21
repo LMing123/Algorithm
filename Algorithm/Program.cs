@@ -32,11 +32,9 @@ namespace Algorithm
             //string s = "barfoothefoobarman";
             // string[] words = { "foo", "bar" };  
             string s = "a b";
-            //string[] words = { "word", "good", "best", "good" };
-            string a = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
-            string b = "110101001011101110001111100110001010100001101011101010000011011011001011101111001100000011011110011";
+            
            // var shit=Solution_67.Fuck("111","11");
-            var shit=Solution_67.Fuck(a,b);
+            var shit=Solution_69.Fuck(8);
 
             //int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
             //var shit = Solution_29.Fuck(-2147483648,-1);
