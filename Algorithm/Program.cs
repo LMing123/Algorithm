@@ -10,28 +10,12 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            Solution_81.ListNode head = new Solution_81.ListNode(1);
 
-            try
-            {
-                int input = int.Parse(Console.ReadLine());
-                var q = head;
-                while (true)
-                {
-                    q.next = new Solution_81.ListNode(input);
-                    q = q.next;
-                    Console.BackgroundColor=ConsoleColor.Cyan;
-                    input = int.Parse(Console.ReadLine());
-                    Console.ResetColor();
-                }
-            }catch
-            {
-                Console.WriteLine("fuck");
-            }
+            int[] nums1 ={ 2,0};
+            int[] nums2 = {1 };
             
-
-            var shit = Solution_81.Fuck(head);
-            Console.WriteLine(shit);
+            Solution_88.Fuck(ref nums1,1,nums2,1);
+           // Console.WriteLine(shit);
 
             Console.ReadLine();
 
