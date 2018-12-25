@@ -13,8 +13,9 @@ namespace Algorithm
 
             int[] nums1 ={ 2,0};
             int[] nums2 = {1 };
-            
-            Solution_88.Fuck(ref nums1,1,nums2,1);
+
+            var items = Solution_100.CreateDiffTree();
+            var shit = Solution_100.Fuck(items.q, items.p);
            // Console.WriteLine(shit);
 
             Console.ReadLine();
