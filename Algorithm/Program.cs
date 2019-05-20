@@ -11,11 +11,11 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            int[] nums1 ={ 2,0};
+            int[] nums1 ={-1,-1,2147483647    };
             int[] nums2 = {1 };
-
-            var items = Solution_100.CreateDiffTree();
-            var shit = Solution_100.Fuck(items.q, items.p);
+            Console.WriteLine(Solution_169.Fuck(nums1));
+            //var items = Solution_100.CreateDiffTree();
+            //var shit = Solution_100.Fuck(items.q, items.p);
            // Console.WriteLine(shit);
 
             Console.ReadLine();
