@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using Algorithm.Code.StringFind;
 namespace Algorithm.Code.StringFind
 {
+    public static class IntExtension
+    {
+        public static int Pow(this int i, int j) => (int)Math.Pow(i, j);
+    }
     public class StringFind
     {
         static readonly int MAXHASH = 26;
@@ -15,6 +19,7 @@ namespace Algorithm.Code.StringFind
         /// <returns></returns>
         public static (bool, int) RabinKarp(string fuck, string shit)
         {
+
             int originalLength = fuck.Length;
             int matchLength = shit.Length;
             int shitHash = HashString(shit);
@@ -41,11 +46,12 @@ namespace Algorithm.Code.StringFind
                         fuckHash = MAXHASH * (fuckHash - (int)Math.Pow(MAXHASH, matchLength - 1) * CharConvert(fuck[i])) + CharConvert(fuck[i + matchLength]);
                     }
                 }
+ 
             }
             return (false, -1);
+            
 
         }
-
         private static int HashString(string hstring)
         {
             int total = 0;
@@ -57,5 +63,7 @@ namespace Algorithm.Code.StringFind
         }
         private static int CharConvert(char c) => (int)c - 'a';
 
+
+       
     }
 }
