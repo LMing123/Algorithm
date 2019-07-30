@@ -21,9 +21,7 @@ namespace Algorithm
             //var items = Solution_100.CreateDiffTree();
             //var shit = Solution_100.Fuck(items.q, items.p);
             // Console.WriteLine(shit);
-            SuffixArray suffix = new SuffixArray("abbaaaab");
-
-            suffix.Start();
+            TrafficLight.Fuck();
 
             Console.ReadLine();
 
