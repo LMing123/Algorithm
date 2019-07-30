@@ -6,6 +6,12 @@ namespace Algorithm.Code
 {
     class TrafficLight
     {
+        /// <summary>
+        /// 问题：交通灯问题
+        /// https://blog.csdn.net/gogokongyin/article/details/51776371
+        /// https://blog.csdn.net/qq_41641805/article/details/88029689
+        /// https://blog.csdn.net/u013599298/article/details/55047496
+        /// </summary>
         public static void Fuck()
         {
             int colorType = 1;
@@ -39,12 +45,11 @@ namespace Algorithm.Code
                         for(int k=0;k<color.Length;k++)
                         {
                             if (shit[j, k] == 1 && color[k] == colorType) flag = false;
-                        }if (flag) color[j] = colorType;
+                        }
+                        if (flag) color[j] = colorType;
                     }
                     
                 }
-
-
                 colorType++;
             }
 
