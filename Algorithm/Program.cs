@@ -25,8 +25,9 @@ namespace Algorithm
 
 
             //suffix.Start();
-            int?[] a = { 3, 9, 20, null, null, 15, 7 };
-           var tree= Common.BulidTree(ref a);
+            //int?[] a = { 3, 9, 20, null, null, 15, 7 };
+            int?[] a = { 1,null,2    };
+        var tree= Common.BulidTree(ref a);
            var i= Solution_104.MaxDepth(tree);
         }
     }
