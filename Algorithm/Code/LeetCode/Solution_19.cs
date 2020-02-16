@@ -8,14 +8,6 @@ namespace Algorithm.Code.LeetCode
 {
 
 
-    //Definition for singly-linked list.
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int x) { val = x; }
-    }
-
     /// <summary>
     /// 19. 删除链表的倒数第N个节点
     /// </summary>
