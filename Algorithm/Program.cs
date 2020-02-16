@@ -23,6 +23,7 @@ namespace Algorithm
             // Console.WriteLine(shit);
             //SuffixArray suffix = new SuffixArray("abbaaaab");
 
+
             //suffix.Start();
             int?[] a = { 3, 9, 20, null, null, 15, 7 };
            var tree= Common.BulidTree(ref a);

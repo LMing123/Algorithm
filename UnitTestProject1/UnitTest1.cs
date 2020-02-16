@@ -11,8 +11,8 @@ namespace UnitTestProject1
         {
             int[] nums = { 1, 2, 3 };
             int[] answer = { 1, 3, 2 };
-             Solution_31.Fuck(ref nums);
-            Assert.IsFalse(nums, answer);
+           //  Solution_31.Fuck(ref nums);
+           // Assert.IsFalse(nums, answer);
         }
     }
 }
