@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Algorithm.Code.LeetCode.simple
 {
-     class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int x) { val = x; }
-    }
+    // public class TreeNode
+    //{
+    //    public int val;
+    //    public TreeNode left;
+    //    public TreeNode right;
+    //    public TreeNode(int x) { val = x; }
+    //}
     /// <summary>
     /// 给定一个二叉树，检查它是否是镜像对称的。
     /// 例如，二叉树[1, 2, 2, 3, 4, 4, 3] 是对称的。

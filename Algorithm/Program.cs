@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Algorithm.Code.LeetCode.simple;
 using Algorithm.Code.StringFind;
-
+using Algorithm.Code.Other;
 namespace Algorithm
 {
     class Program
@@ -21,13 +21,20 @@ namespace Algorithm
             //var items = Solution_100.CreateDiffTree();
             //var shit = Solution_100.Fuck(items.q, items.p);
             // Console.WriteLine(shit);
-            SuffixArray suffix = new SuffixArray("abbaaaab");
+            //SuffixArray suffix = new SuffixArray("abbaaaab");
 
-            suffix.Start();
+            //suffix.Start();
+            int?[] a = { 3, 9, 20, null, null, 15, 7 };
+           var tree= Common.BulidTree(ref a);
+           var i= Solution_104.MaxDepth(tree);
+        }
+    }
 
-            Console.ReadLine();
-
-
+    public class Shit
+    {
+        public string Fuck(string i,string j)
+        {
+           return string.Concat(this, i,j);
         }
     }
 }
