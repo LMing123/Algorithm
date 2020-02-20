@@ -6,6 +6,8 @@ using System.Linq;
 using Algorithm.Code.LeetCode.simple;
 using Algorithm.Code.StringFind;
 using Algorithm.Code.Other;
+using System.Threading;
+
 namespace Algorithm
 {
     class Program
@@ -22,13 +24,17 @@ namespace Algorithm
             //var shit = Solution_100.Fuck(items.q, items.p);
             // Console.WriteLine(shit);
             //SuffixArray suffix = new SuffixArray("abbaaaab");
-
-
             //suffix.Start();
+            
             int?[] a = { 3, 9, 20, null, null, 15, 7 };
-            //int?[] a = { 1,null,2    };
-            var tree = Common.BulidTree(ref a);
-            var i = Solution_107.LevelOrderBottom(tree);
+
+            int[] b = { -10, -3, 0, 5, 9 };
+
+
+            DateTime dateTime = DateTime.Now;
+            var tree = Solution_108.SortedArrayToBST1(b,0,b.Length-1);
+            var i = (DateTime.Now - dateTime).TotalMilliseconds;
+
         }
     }
 
