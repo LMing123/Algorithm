@@ -25,15 +25,16 @@ namespace Algorithm
             // Console.WriteLine(shit);
             //SuffixArray suffix = new SuffixArray("abbaaaab");
             //suffix.Start();
-            
-            int?[] a = { 3, 9, 20, null, null, 15, 7 };
 
-            int[] b = { -10, -3, 0, 5, 9 };
+              //int?[] vs = { 3, 9, 20, null, null, 15, 7 };
+              //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
+            //int?[] vs = { 1,null,2,null,3 };
+            int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
 
+        var tree =Common.BulidTree(ref vs);
 
-            DateTime dateTime = DateTime.Now;
-            var tree = Solution_108.SortedArrayToBST1(b,0,b.Length-1);
-            var i = (DateTime.Now - dateTime).TotalMilliseconds;
+            var result = Solution_110.IsBalanced(tree);
+
 
         }
     }
