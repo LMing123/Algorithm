@@ -26,14 +26,16 @@ namespace Algorithm
             //SuffixArray suffix = new SuffixArray("abbaaaab");
             //suffix.Start();
 
-              //int?[] vs = { 3, 9, 20, null, null, 15, 7 };
-              //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
+
+            //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
             //int?[] vs = { 1,null,2,null,3 };
-            int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
+            // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
 
-        var tree =Common.BulidTree(ref vs);
+            int?[] vs = { 1, 2 };
+            //int?[] vs = { 3,9,20,null,null,15,7 };
+            var tree =Common.BulidTree(ref vs);
 
-            var result = Solution_110.IsBalanced(tree);
+            var result = Solution_111.MinDepth(tree);
 
 
         }
