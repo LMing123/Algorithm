@@ -31,11 +31,7 @@ namespace Algorithm
             //int?[] vs = { 1,null,2,null,3 };
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
 
-            int?[] vs = { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1 };
-            //int?[] vs = { 1,2 };
-            var tree =Common.BulidTree(ref vs);
-
-            var result = Solution_112.HasPathSum(tree,22);
+            var result = Solution_118.Generate(5);
 
 
         }
