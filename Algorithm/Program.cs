@@ -31,7 +31,7 @@ namespace Algorithm
             //int?[] vs = { 1,null,2,null,3 };
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
 
-            var result = Solution_118.Generate(5);
+            var result = Solutin_119.GetRow(0);
 
 
         }
