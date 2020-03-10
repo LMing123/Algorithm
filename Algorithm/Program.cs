@@ -30,8 +30,10 @@ namespace Algorithm
             //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
             //int?[] vs = { 1,null,2,null,3 };
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
-
-            var result = Solutin_119.GetRow(0);
+          //int[] vs = { 7, 1, 5, 3, 6, 4 };
+            int[]  vs = { 3, 3, 5, 0, 0, 3, 1, 4 };
+           // int[]  vs = { 1,2,3,4,5 };
+            var result = Solution_121.MaxProfit(vs);
 
 
         }
