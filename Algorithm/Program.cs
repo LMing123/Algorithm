@@ -33,7 +33,7 @@ namespace Algorithm
           //int[] vs = { 7, 1, 5, 3, 6, 4 };
             int[]  vs = { 3, 3, 5, 0, 0, 3, 1, 4 };
            // int[]  vs = { 1,2,3,4,5 };
-            var result = Solution_121.MaxProfit(vs);
+            var result = Solution_125.IsPalindrome("race a car");
 
 
         }
