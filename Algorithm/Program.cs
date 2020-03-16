@@ -32,9 +32,47 @@ namespace Algorithm
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
           //int[] vs = { 7, 1, 5, 3, 6, 4 };
             int[]  vs = { 3, 3, 5, 0, 0, 3, 1, 4 };
-           // int[]  vs = { 1,2,3,4,5 };
-            var result = Solution_125.IsPalindrome("race a car");
+            // int[]  vs = { 1,2,3,4,5 };
+            Stack<int> shit = new Stack<int>();
+            shit.Peek();
 
+
+
+            var result = new Solution_155();
+            result.Push(2147483646);
+            result.Push(2147483646);
+            result.Top();
+            result.Pop();
+            result.GetMin();
+            result.Pop();
+            result.GetMin();
+            result.Pop();
+            result.Push(2147483647);
+            result.Top();
+            result.GetMin();
+            result.Push(-2147483648);
+            result.Top();
+            result.GetMin();
+            result.Pop();
+            result.GetMin();
+
+
+            result.GetMin();
+            result.GetMin();
+            result.Push(-20);
+            result.GetMin();
+            result.GetMin();
+            result.Top();
+            result.GetMin();
+            result.Pop();
+            result.Push(10);
+            result.Push(-7);
+            result.GetMin();
+            result.Push(-7);
+            result.Pop();
+            result.Top();
+            result.GetMin();
+            result.Pop();
 
         }
     }
