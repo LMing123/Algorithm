@@ -4,6 +4,29 @@ using System.Text;
 
 namespace Algorithm.Code.LeetCode.simple
 {
+    // <summary>
+    //  Stack<int> shit = new Stack<int>();
+    //  shit.Peek();
+
+    //        var result = new Solution_155();
+    //result.Push(2147483646);
+    //        result.Push(2147483646);
+    //        result.Top();
+    //        result.Pop();
+    //        result.GetMin();
+    //        result.Pop();
+    //        result.GetMin();
+    //        result.Pop();
+    //        result.Push(2147483647);
+    //        result.Top();
+    //        result.GetMin();
+    //        result.Push(-2147483648);
+    //        result.Top();
+    //        result.GetMin();
+    //        result.Pop();
+    //        result.GetMin();
+
+    // </summary>
     public class Solution_155
     {
         Node current;
