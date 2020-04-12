@@ -30,10 +30,11 @@ namespace Algorithm
             //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
             //int?[] vs = { 1,null,2,null,3 };
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
-          //int[] vs = { 7, 1, 5, 3, 6, 4 };
-            int[]  vs = { 3, 3, 5, 0, 0, 3, 1, 4 };
+            //int[] vs = { 7, 1, 5, 3, 6, 4 };
+              // int[]  vs = { 1, 2, 3, 4, 5, 6, 7 };
             // int[]  vs = { 1,2,3,4,5 };
-            var i = Solution_171.TitleToNumber("ZY");
+            int[] vs = { -1, -100, 3, 99 };
+            Solution_189.Rotate(ref vs, 2);
         }
     }
 
