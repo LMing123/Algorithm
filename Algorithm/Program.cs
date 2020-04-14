@@ -31,10 +31,11 @@ namespace Algorithm
             //int?[] vs = { 1,null,2,null,3 };
             // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
-              // int[]  vs = { 1, 2, 3, 4, 5, 6, 7 };
+               int[]  vs = { 1, 2, 3, 4, 5, 6, 7 };
             // int[]  vs = { 1,2,3,4,5 };
-            int[] vs = { -1, -100, 3, 99 };
-            Solution_189.Rotate(ref vs, 2);
+            //int[] vs = { -1, -100, 3, 99 };
+            uint i= 0b_0000_0010_1001_0100_0001_1110_1001_1100;
+           var result=  Solution_190.reverseBits(i);
         }
     }
 
