@@ -25,17 +25,13 @@ namespace Algorithm
             // Console.WriteLine(shit);
             //SuffixArray suffix = new SuffixArray("abbaaaab");
             //suffix.Start();
-
-
-            //int?[] vs = { 1, 2, 2, 3, 3, null, null, 4, 4 }; 
-            //int?[] vs = { 1,null,2,null,3 };
-            // int?[] vs = { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 };
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
-               int[]  vs = { 1, 2, 3, 4, 5, 6, 7 };
+            int[] vs = { 1,3,1};
+            int[] vs1 = { 1,2,3,1};
             // int[]  vs = { 1,2,3,4,5 };
             //int[] vs = { -1, -100, 3, 99 };
-            uint i= 0b_00000000000000000000000000001011;
-           var result=  Solution_191.HammingWeight(i);
+            uint i = 0b_00000000000000000000000000001011;
+            var result = Solution_198.Rob(vs);
         }
     }
 
