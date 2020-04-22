@@ -6,6 +6,19 @@ namespace Algorithm.Code.LeetCode
 {
     public class Common
     {
+        public static ListNode BuildList(int[] a)
+        {
+            if (a.Length==0) return null;
+            var head = new ListNode(a[0]);
+            var node = head;
+            for(int i=1;i<a.Length;i++)
+            {
+                node.next = new ListNode(a[i]);
+                node = node.next;
+            }
+            return head;
+
+        }
         public static TreeNode BulidTree(ref int?[] a)
         {
             if (a.Length == 0) return null;
