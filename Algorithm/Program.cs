@@ -27,11 +27,11 @@ namespace Algorithm
             //suffix.Start();
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
             int[] vs = { 1,2,3};
-           var ooo= Fuck(vs.ToList());
+           //var ooo= Fuck(vs.ToList());
             // int[]  vs = { 1,2,3,4,5 };
             //int[] vs = { -1, -100, 3, 99 };
             uint i = 0b_00000000000000000000000000001011;
-            var result = Solution_202.IsHappy(234);
+            var result = Solution_231.IsPowerOfTwo(1);
         }
 
    
