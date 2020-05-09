@@ -31,7 +31,7 @@ namespace Algorithm
             // int[]  vs = { 1,2,3,4,5 };
             //int[] vs = { -1, -100, 3, 99 };
             uint i = 0b_00000000000000000000000000001011;
-            var result = Solution_231.IsPowerOfTwo(1);
+            var result = Solution_205.IsIsomorphic("ab", "ca");
         }
 
    
