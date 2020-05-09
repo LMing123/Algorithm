@@ -9,6 +9,7 @@ namespace Algorithm.Code.LeetCode.simple
 {
     class Solution_205
     {
+        //映射 
         public static bool IsIsomorphic2(string s, string t)
         {
             int[] fuck1 = new int[128];
