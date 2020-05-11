@@ -26,12 +26,12 @@ namespace Algorithm
             //SuffixArray suffix = new SuffixArray("abbaaaab");
             //suffix.Start();
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
-            int[] vs = { 1,2,3};
-           //var ooo= Fuck(vs.ToList());
-            // int[]  vs = { 1,2,3,4,5 };
+            //int[] vs = { 1,2,3};
+            //var ooo= Fuck(vs.ToList());
+             int[]  vs = { 1,2,3,4,5 };
             //int[] vs = { -1, -100, 3, 99 };
-            uint i = 0b_00000000000000000000000000001011;
-            var result = Solution_205.IsIsomorphic("ab", "ca");
+            ListNode head = Common.BuildList(vs);
+            var result = Solution_206.ReverseList(head);
         }
 
    
