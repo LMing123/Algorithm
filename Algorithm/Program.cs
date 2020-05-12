@@ -28,10 +28,9 @@ namespace Algorithm
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
-             int[]  vs = { 1,2,3,4,5 };
-            //int[] vs = { -1, -100, 3, 99 };
-            ListNode head = Common.BuildList(vs);
-            var result = Solution_206.ReverseList(head);
+             int[]  vs = { 1, 2, 3, 1, 2, 3 };
+           // 
+            var result = Solution_219.ContainsNearbyDuplicate(new int[] { 99, 99 }, 2);
         }
 
    
