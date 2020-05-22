@@ -28,8 +28,8 @@ namespace Algorithm
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
-            var list = Common.BuildList(new int[]{ 1, 2});
-            var result = Solution_234.IsPalindrome(list);
+           // var list = Common.BuildList(new int[]{ 1, 2});
+            var result = Solution_258.AddDigits(38);
         }
 
    
