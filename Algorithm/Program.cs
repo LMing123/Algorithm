@@ -28,8 +28,8 @@ namespace Algorithm
             //int[] vs = { 7, 1, 5, 3, 6, 4 };
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
-           // var list = Common.BuildList(new int[]{ 1, 2});
-            var result = Solution_268.MissingNumber(new int[] { 3,0,1 });
+            // var list = Common.BuildList(new int[]{ 1, 2});
+            var result = Solution_278.FirstBadVersion(5, 4);
         }
 
    
