@@ -29,7 +29,7 @@ namespace Algorithm
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
            // var list = Common.BuildList(new int[]{ 1, 2});
-            var result = Solution_258.AddDigits(38);
+            var result = Solution_268.MissingNumber(new int[] { 3,0,1 });
         }
 
    
