@@ -29,7 +29,8 @@ namespace Algorithm
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
             // var list = Common.BuildList(new int[]{ 1, 2});
-            var result = Solution_278.FirstBadVersion(5, 4);
+            var i = new int[] { 0, 1, 0, 3, 12 };
+           Solution_283.MoveZeroes(ref i);
         }
 
    
