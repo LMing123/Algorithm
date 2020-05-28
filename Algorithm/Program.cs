@@ -30,7 +30,7 @@ namespace Algorithm
             //var ooo= Fuck(vs.ToList());
             // var list = Common.BuildList(new int[]{ 1, 2});
             var i = new int[] { 0, 1, 0, 3, 12 };
-           Solution_283.MoveZeroes(ref i);
+           var result= Solution_290.WordPattern("abba", "dog cat cat dog");
         }
 
    
