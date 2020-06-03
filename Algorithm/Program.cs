@@ -29,11 +29,7 @@ namespace Algorithm
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
             // var list = Common.BuildList(new int[]{ 1, 2});
-            var i = new int[] { -2, 0, 3, -5, 2, -1 };
-            var j = new Solution_303(i);
-            var result = j.SumRange(0, 2);
-            var result1 = j.SumRange(2, 5);
-            var result2 = j.SumRange(0, 5);
+            var result = Solution_345.ReverseVowels("hello");
         }
 
    
