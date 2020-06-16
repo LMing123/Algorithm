@@ -14,8 +14,6 @@ namespace Algorithm.Code.LeetCode.simple
             List<int> Hours = new List<int> { 1, 2, 4, 8 };
             List<int> Minus = new List<int> { 1, 2, 4, 8, 16, 32 };
             var result = new List<string>();
-            var oo = Cal(Minus, 2,59);
-
 
             for(int i=0;i<=num;i++)
             {
@@ -32,7 +30,6 @@ namespace Algorithm.Code.LeetCode.simple
                 }
             }
             return result;
-            return new string[] { ""};
         }
 
          List<int> Cal(List<int> hours,int level,int bound)
