@@ -14,14 +14,10 @@ namespace Algorithm.Code.LeetCode.simple
             List<int> Hours = new List<int> { 1, 2, 4, 8 };
             List<int> Minus = new List<int> { 1, 2, 4, 8, 16, 32 };
             var result = new List<string>();
-            var oo = Cal(Minus, 2,59);
-
-
             for(int i=0;i<=num;i++)
             {
                 var fuck = Cal(Hours, num-i,11);
                 var shit = Cal(Minus, i,59);
-                var sb = new StringBuilder();
                 foreach (var hour in fuck)
                 {
                     foreach (var minu in shit)
@@ -32,7 +28,6 @@ namespace Algorithm.Code.LeetCode.simple
                 }
             }
             return result;
-            return new string[] { ""};
         }
 
         public List<int> Cal(List<int> hours,int level,int bound)
