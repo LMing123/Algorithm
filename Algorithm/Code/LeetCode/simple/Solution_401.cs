@@ -35,7 +35,7 @@ namespace Algorithm.Code.LeetCode.simple
             return new string[] { ""};
         }
 
-        public List<int> Cal(List<int> hours,int level,int bound)
+         List<int> Cal(List<int> hours,int level,int bound)
         {
             if (level == 0) return new List<int> { 0 };
             if (level == 1) return hours;

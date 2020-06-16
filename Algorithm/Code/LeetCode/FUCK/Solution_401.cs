@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Algorithm.Code.LeetCode.simple
 {
-    class Solution_401
+    class Solution_401_ooo
     {
        
         public  IList<string> ReadBinaryWatch(int num)
