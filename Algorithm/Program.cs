@@ -29,7 +29,8 @@ namespace Algorithm
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
             // var list = Common.BuildList(new int[]{ 1, 2});
-            var result = Solution_345.ReverseVowels("hello");
+            var s = new Solution_401();
+            var t = s.ReadBinaryWatch(3);
         }
 
    
