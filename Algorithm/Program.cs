@@ -29,8 +29,7 @@ namespace Algorithm
             //int[] vs = { 1,2,3};
             //var ooo= Fuck(vs.ToList());
             // var list = Common.BuildList(new int[]{ 1, 2});
-            var s = new Solution_401();
-            var t = s.ReadBinaryWatch(3);
+            var s = Solution_409.LongestPalindrome("zeusnilemacaronimaisanitratetartinasiaminoracamelinsuez");
         }
 
    
