@@ -14,12 +14,9 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            
-            int?[] vs = { 1, -2, -3, 1, 3, -2, null, -1 };
-            //var ooo= Fuck(vs.ToList());
-            // var list = Common.BuildList(new int[]{ 1, 2});
-  var tree = Common.BulidTree(ref vs);
-            var s = Solution_437.PathSum(tree, -1);
+
+            char[] vs = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            var s = Solution_443.Compress(vs);
         }
 
    

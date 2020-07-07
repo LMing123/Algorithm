@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Algorithm.Code.LeetCode.simple
 {
-   public class Solutin_119
+   public class Solution_119
     {
         public static IList<int> GetRow(int rowIndex)// (j - 1 < 0 ? 0 : lists[i - 1][j - 1])
         {
