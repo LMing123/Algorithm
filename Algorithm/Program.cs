@@ -14,9 +14,8 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-
-            char[] vs = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
-            var s = Solution_443.Compress(vs);
+            var vs = new int[][] {new int[] { 0, 0 }, new int[] { 1, 0 }, new int[] { 2, 0 } };
+            var s = Solution_447.NumberOfBoomerangs(vs);
         }
 
    

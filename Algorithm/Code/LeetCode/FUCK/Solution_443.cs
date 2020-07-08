@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
-namespace Algorithm.Code.LeetCode.simple
+namespace Algorithm.Code.LeetCode.FUCK
 {
     public class Solution_443
     {
