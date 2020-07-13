@@ -14,8 +14,8 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            var vs = new int[][] {new int[] { 0, 0 }, new int[] { 1, 0 }, new int[] { 2, 0 } };
-            var s = Solution_447.NumberOfBoomerangs(vs);
+            var vs = new int[] { 1, 2, 3 };
+            var s = Solution_453.MinMoves(vs);
         }
 
    
