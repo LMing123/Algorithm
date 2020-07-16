@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Algorithm.Code.LeetCode.simple
+namespace Algorithm.Code.LeetCode.FUCK
 {
     class Solution_459
     {
 
-        /// <summary>
-        /// 还有种KMP 写法
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
         public static bool RepeatedSubstringPattern(string s)
         {
             if (s.Length == 0 || s.Length == 1) return false;
