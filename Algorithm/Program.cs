@@ -15,7 +15,7 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var s = Solution_459.RepeatedSubstringPattern("aba");
+            var s = Solution_475.FindRadius(new int[] { 1, 2, 3, 4 },new int[] { 1, 4 });
         }
 
    
