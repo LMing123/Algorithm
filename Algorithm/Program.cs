@@ -15,7 +15,7 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var s = Solution_482.LicenseKeyFormatting("5F3Z-2e-9-w",5);
+            var s = Solution_500.FindWords(new string[] { "Hello", "Alaska", "Dad", "Peace" });
         }
 
    
