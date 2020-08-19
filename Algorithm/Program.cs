@@ -15,7 +15,7 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var s = Solution_500.FindWords(new string[] { "Hello", "Alaska", "Dad", "Peace" });
+            var s = Solution_520.DetectCapitalUse("FlaG");
         }
 
    
