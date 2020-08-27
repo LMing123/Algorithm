@@ -23,7 +23,7 @@ namespace Algorithm.Code.LeetCode.simple
             var right = Helper(root.right);
             if (prev != null)
             {
-                root.val += prev == null ? 0 : prev.val;
+                root.val +=  prev.val;
             }
             else
             {
