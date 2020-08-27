@@ -15,7 +15,7 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var s = Solution_520.DetectCapitalUse("FlaG");
+            var s = Solution_532.FindPairs(new int[] { 1, 1, 1,2,2 }, 1);
         }
 
    
