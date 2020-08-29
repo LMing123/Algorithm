@@ -15,7 +15,8 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var s = Solution_532.FindPairs(new int[] { 1, 1, 1,2,2 }, 1);
+            var solution = new Solution_541();
+             var s=solution.ReverseStr("abcdefg",2);
         }
 
    
