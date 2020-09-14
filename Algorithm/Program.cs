@@ -23,7 +23,7 @@ namespace Algorithm
             };
             var i = nums.Length;
             var i2 = nums.SelectMany(x => x);
-
+            nums.Any
             var solution = new Solution_557();
             var s = solution.ReverseWords("Let's take LeetCode contest");
         }
