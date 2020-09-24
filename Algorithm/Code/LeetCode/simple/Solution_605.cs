@@ -22,7 +22,7 @@ namespace Algorithm.Code.LeetCode.simple
                 else if (flowerbed[i] == 0) canPlan = true;
             }
             if (flowerbed[flowerbed.Length - 1] == 0 && canPlan) sum++;
-            return n <= sum ? true : false;
+            return n <= sum;
         }
     }
 }
