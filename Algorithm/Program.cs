@@ -18,6 +18,8 @@ namespace Algorithm
         {
 
             int[] list = new int[] { 1, 3, 2, 2, 5, 2, 3, 7 };
+            var s = new Solution_643();
+            double fuck = s.FindMaxAverage(new int[] { 4, 0, 4, 3, 3 },5);
         }
 
 
