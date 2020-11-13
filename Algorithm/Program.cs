@@ -20,8 +20,9 @@ namespace Algorithm
             int[][] list = new int[5][] { new[] { 2, 3, 4 }, new[] { 5, 6, 7 }, new[] { 8, 9, 10 }, new[] { 11, 12, 13 }, new[] { 14, 15, 16 } };
             //int[] list1 = new int[] { 2, 2, 3, 2, 4};
             int[] list1 = new int[] { 3,4,2,3};
-            var s = new Solution_680();
-            var fuck = s.ValidPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga");
+            var s = new Solution_682();
+            // var fuck = s.ValidPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga");
+            var fuck = s.CalPoints(new string[] { "5", "2", "C", "D", "+" });
         }
 
 
