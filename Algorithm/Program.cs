@@ -10,6 +10,7 @@ using System.Threading;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using Algorithm.Code.LeetCode.medium;
+using Algorithm.Code.LeetCode.hard;
 
 namespace Algorithm
 {
@@ -18,9 +19,10 @@ namespace Algorithm
         static void Main(string[] args)
         {
 
-            var g = new Solution_39();
+            var g = new Solution_42();
            // var result=g.CombinationSum(new int[] { 2, 3, 6, 7 },7);
-            var result=g.CombinationSum(new int[] { 2, 3,5 },8);
+            var result=g.Trap(new int[] { 4, 2, 0, 3, 2, 5 });
+            //var result=g.Trap(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
 
 
             //var lists = new int[] { 2, 3, 1, 4, 5, 7, 6, 9, 8, 4, 22, 66, 44 };
