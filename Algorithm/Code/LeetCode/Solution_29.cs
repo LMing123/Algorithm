@@ -8,23 +8,23 @@ namespace Algorithm.Code.LeetCode
     public class Solution_29
     {
 
-        public static int Fuck(int dividend, int divisor)
+        public static int Divide(int dividend, int divisor)
         {
             try
             {
-                int fuck = 0;
-                uint shit = (uint)(divisor < 0 ? 0 - divisor : divisor);
-                uint holy_shit = (uint)(dividend < 0 ? 0 - dividend : dividend);
+                int result = 0;
+                uint s = (uint)(divisor < 0 ? 0 - divisor : divisor);
+                uint holy_s = (uint)(dividend < 0 ? 0 - dividend : dividend);
 
                 int i = 31;
                 checked
                 {
                     while (i >= 0)
                     {
-                        if ((holy_shit >> i) >= shit)
+                        if ((holy_s >> i) >= s)
                         {
-                            fuck += 1 << i;
-                            holy_shit = holy_shit - (shit << i);
+                            result += 1 << i;
+                            holy_s = holy_s - (s << i);
                         }
                         i = i - 1;
                     }
@@ -35,39 +35,39 @@ namespace Algorithm.Code.LeetCode
                 {
                     checked
                     {
-                        fuck = fuck > 0 ? fuck : 0 - fuck;
+                        result = result > 0 ? result : 0 - result;
                     }
                 }
                 else if (dividend < 0 || divisor < 0)
                 {
-                    fuck = ~fuck + 1;
+                    result = ~result + 1;
                 }
-                return fuck;
+                return result;
             }
             catch (OverflowException e)
             {
                 return int.MaxValue;
             }
         }
-        public static int old_Fuck(int dividend, int divisor)
+        public static int old_Divide(int dividend, int divisor)
         {
 
             try
             {
-                int fuck = 0;
-                int shit = divisor < 0 ? 0 - divisor : divisor;
-                int holy_shit = dividend < 0 ? 0 - dividend : dividend;
+                int result = 0;
+                int s = divisor < 0 ? 0 - divisor : divisor;
+                int holy_s = dividend < 0 ? 0 - dividend : dividend;
                 if (divisor == 1 || divisor == -1)
                 {
-                    fuck = dividend < 0 ? 0 - dividend : dividend;
+                    result = dividend < 0 ? 0 - dividend : dividend;
                 }
                 else
                 {
                     checked
                     {
-                        for (int i = shit; i <= holy_shit; i = i + shit)
+                        for (int i = s; i <= holy_s; i = i + s)
                         {
-                            fuck++;
+                            result++;
                         }
                     }
                 }
@@ -76,14 +76,14 @@ namespace Algorithm.Code.LeetCode
                 {
                     checked
                     {
-                        holy_shit = dividend < 0 ? 0 - dividend : dividend;
+                        holy_s = dividend < 0 ? 0 - dividend : dividend;
                     }
                 }
                 else if (dividend < 0 || divisor < 0)
                 {
-                    fuck = ~fuck + 1;
+                    result = ~result + 1;
                 }
-                return fuck;
+                return result;
             }
             catch (OverflowException e)
             {

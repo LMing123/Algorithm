@@ -8,7 +8,7 @@ namespace Algorithm.Code
 {
     public class Solution_16
     {
-        public static int Fuck(int[] nums,int target)
+        public static int ThreeSumClosest(int[] nums,int target)
         {
            // Array.Sort(nums);
             int head = 0;

@@ -11,7 +11,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public partial class Solution_21
     {
-        public static ListNode Fuck(ListNode head)
+        public static ListNode ChangeTwoLinkListNode(ListNode head)
         {
             if (head == null)
                 return head;

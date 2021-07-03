@@ -8,7 +8,7 @@ namespace Algorithm.Code.LeetCode
 {
     class Solution_18
     {
-        public static IList<IList<int>> Fuck(int[] nums, int target)
+        public static IList<IList<int>> FourSum(int[] nums, int target)
         {
             Array.Sort(nums);
             int length = nums.Length;
@@ -36,23 +36,23 @@ namespace Algorithm.Code.LeetCode
                                 m++;
                             }
                         }
-                        int fuck_k = nums[k];
+                        int f_k = nums[k];
                         k++;
-                        while (k < length && nums[k] == fuck_k)
+                        while (k < length && nums[k] == f_k)
                         {
                             k++;
                         }
                     }
-                    int fuck_j = nums[j];
+                    int f_j = nums[j];
                     j++;
-                    while (j < length && nums[j] == fuck_j)
+                    while (j < length && nums[j] == f_j)
                     {
                         j++;
                     }
                 }
-                int fuck_i = nums[i];
+                int f_i = nums[i];
                 i++;
-                while (i < length && nums[i] == fuck_i)
+                while (i < length && nums[i] == f_i)
                 {
                     i++;
                 }

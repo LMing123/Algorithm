@@ -11,14 +11,14 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_22
     {
-        public static List<string> Fuck(int n)
+        public static List<string> GenerateParenthesis(int n)
         {
             List<string> result = new List<string>();
-            Shit(ref result, "", 0, 0, n);
+            GenerateParenthesisHelper(ref result, "", 0, 0, n);
             return result;
         }
 
-        static void Shit(ref List<string> result, string ans, int left, int right, int max)
+        static void GenerateParenthesisHelper(ref List<string> result, string ans, int left, int right, int max)
         {
             if(ans.Length>=max*2)
             {
@@ -27,9 +27,9 @@ namespace Algorithm.Code.LeetCode
             }
 
             if (left < max)
-                Shit(ref result, ans + '(', left + 1, right, max);
+                GenerateParenthesisHelper(ref result, ans + '(', left + 1, right, max);
             if (right < left)
-                Shit(ref result, ans + ')', left, right + 1, max);
+                GenerateParenthesisHelper(ref result, ans + ')', left, right + 1, max);
         }
     }
 }

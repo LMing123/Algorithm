@@ -20,44 +20,44 @@ namespace Algorithm.Code
             int holy_z = nums.Length - 2;
             while(holy_i<holy_z)
             {
-                int fuck_i = holy_i + 1;
-                int fuck_z = holy_z + 1;
-                while(fuck_i<fuck_z&&fuck_i<nums.Length-1&&fuck_z>0)
+                int f_i = holy_i + 1;
+                int f_z = holy_z + 1;
+                while(f_i<f_z&&f_i<nums.Length-1&&f_z>0)
                 {
-                    int value = nums[holy_i] + nums[fuck_i] + nums[fuck_z];
+                    int value = nums[holy_i] + nums[f_i] + nums[f_z];
                     if(value==0)
                     {
-                        result.Add(new List<int> { nums[holy_i] , nums[fuck_i] , nums[fuck_z] });
-                        int fff = nums[fuck_i];
-                        fuck_i++;
-                        while(fff == nums[fuck_i]&& fuck_i < nums.Length - 1)
+                        result.Add(new List<int> { nums[holy_i] , nums[f_i] , nums[f_z] });
+                        int fff = nums[f_i];
+                        f_i++;
+                        while(fff == nums[f_i]&& f_i < nums.Length - 1)
                         {
-                            fuck_i++;
+                            f_i++;
                         }
-                        fff = nums[fuck_z];
-                        fuck_z--;
-                        while (fff == nums[fuck_i] && fuck_z > 0)
+                        fff = nums[f_z];
+                        f_z--;
+                        while (fff == nums[f_i] && f_z > 0)
                         {
-                            fuck_z--;
+                            f_z--;
                         }
 
                     }
                     else if(value<0)
                     {
-                        int fff = nums[fuck_i];
-                        fuck_i++;
-                        while (fff == nums[fuck_i] && fuck_i < nums.Length - 1)
+                        int fff = nums[f_i];
+                        f_i++;
+                        while (fff == nums[f_i] && f_i < nums.Length - 1)
                         {
-                            fuck_i++;
+                            f_i++;
                         }
                     }
                     else
                     {
-                       int fff = nums[fuck_z];
-                        fuck_z--;
-                        while (fff == nums[fuck_i] && fuck_z > 0)
+                       int fff = nums[f_z];
+                        f_z--;
+                        while (fff == nums[f_i] && f_z > 0)
                         {
-                            fuck_z--;
+                            f_z--;
                         }
                     }
                 }

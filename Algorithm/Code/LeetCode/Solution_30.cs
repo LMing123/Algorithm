@@ -30,7 +30,7 @@ namespace Algorithm.Code.LeetCode
     //string[] words = { "dhvf", "sind", "ffsl", "yekr", "zwzq", "kpeo", "cila", "tfty", "modg", "ztjg", "ybty", "heqg", "cpwo", "gdcj", "lnle", "sefg", "vimw", "bxcb" };
     public class Solution_30
     {
-        public static IList<int> Fuck(string s, string[] words)
+        public static IList<int> FindSubstring(string s, string[] words)
         {
             List<int> result = new List<int>();
 
