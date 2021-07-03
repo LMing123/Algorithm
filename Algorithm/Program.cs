@@ -18,10 +18,14 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-
-            var g = new Solution_42();
+            
+            var g = new Solution_43();
+          //  Solution_43.Sum("321", "4");
            // var result=g.CombinationSum(new int[] { 2, 3, 6, 7 },7);
-            var result=g.Trap(new int[] { 4, 2, 0, 3, 2, 5 });
+          //  var result=g.Multiply("456", "123");
+           // var result=g.Multiply( "123456789", "987654321");
+            var result=g.Multiply("987654321", "123456789");
+            Console.WriteLine(result);
             //var result=g.Trap(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
 
 
