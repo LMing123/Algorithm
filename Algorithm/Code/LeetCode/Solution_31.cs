@@ -15,7 +15,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_31
     {
-        public static void Fuck(ref int[] nums)
+        public static void Func(ref int[] nums)
         {
             int i = nums.Length - 2;
             while (i >= 0)

@@ -12,10 +12,10 @@ namespace Algorithm.Code
         /// https://blog.csdn.net/qq_41641805/article/details/88029689
         /// https://blog.csdn.net/u013599298/article/details/55047496
         /// </summary>
-        public static void Fuck()
+        public static void Func()
         {
             int colorType = 1;
-            int[,] shit ={
+            int[,] SpecialS ={
                             { 0,0,0,0,1,1,1,1,0,1,1,1,0 },
                             { 0,0,0,0,0,1,1,1,0,0,1,1,0 },
                             { 0,0,0,0,0,1,0,0,0,1,1,1,0 },
@@ -40,11 +40,11 @@ namespace Algorithm.Code
                 color[i] = colorType;
                 for (int j = i + 1; j < color.Length; j++)
                 {
-                    if (shit[i, j] == 0&&color[j]==0)
+                    if (SpecialS[i, j] == 0&&color[j]==0)
                     {
                         for(int k=0;k<color.Length;k++)
                         {
-                            if (shit[j, k] == 1 && color[k] == colorType) flag = false;
+                            if (SpecialS[j, k] == 1 && color[k] == colorType) flag = false;
                         }
                         if (flag) color[j] = colorType;
                     }

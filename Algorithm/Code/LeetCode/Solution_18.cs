@@ -29,9 +29,9 @@ namespace Algorithm.Code.LeetCode
                                 };
                                 list.Add(tem);
                             }
-                            int fuck_m = nums[m];
+                            int Func_m = nums[m];
                             m++;
-                            while (m < length && fuck_m == nums[m])
+                            while (m < length && Func_m == nums[m])
                             {
                                 m++;
                             }

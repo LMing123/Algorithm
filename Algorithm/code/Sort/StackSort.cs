@@ -27,12 +27,12 @@ namespace Algorithm.Code
         {
             for(int j=2*start+1;j< length; j=j*2+1)
             {
-                int shit = nums[start];
+                int SpecialS = nums[start];
                 if(j+1< length && nums[j]<nums[j+1])
                 {
                     j++;
                 }
-                if (j < length && shit < nums[j])
+                if (j < length && SpecialS < nums[j])
                 {
                     int tem = nums[start];
                     nums[start] = nums[j];
@@ -42,7 +42,7 @@ namespace Algorithm.Code
 
             }
         }
-        public static int[] Fuck(int[] nums)
+        public static int[] Func(int[] nums)
         {
             int[] result = nums;
             int startPositon = (nums.Length / 2);

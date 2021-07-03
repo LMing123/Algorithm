@@ -17,11 +17,11 @@ namespace Algorithm.Code.LeetCode.simple
     /// </summary>
     class Solution_101
     {
-        public bool Fuck(TreeNode root)
+        public bool Func(TreeNode root)
         {
             return Tree(root, root);
         }
-        public bool Fuck2(TreeNode root)
+        public bool Func2(TreeNode root)
         {
             return Tree2(root);
             

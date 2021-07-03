@@ -11,7 +11,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_28
     {
-        public static int Fuck(string haystack, string needle)
+        public static int StrStr(string haystack, string needle)
         {
             
             if (needle.Length == 0)

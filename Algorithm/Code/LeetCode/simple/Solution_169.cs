@@ -6,7 +6,7 @@ namespace Algorithm.Code.LeetCode.simple
 {
     public class Solution_169
     {
-        public static int Fuck(int[] nums)
+        public static int Func(int[] nums)
         {
             int length = nums.Length;
             int value = 0;

@@ -5,8 +5,8 @@ using System.Text;
 namespace Algorithm.Code.LeetCode.simple
 {
     // <summary>
-    //  Stack<int> shit = new Stack<int>();
-    //  shit.Peek();
+    //  Stack<int> SpecialS = new Stack<int>();
+    //  SpecialS.Peek();
 
     //        var result = new Solution_155();
     //result.Push(2147483646);

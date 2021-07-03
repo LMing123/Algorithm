@@ -13,7 +13,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     class Solution_19
     {
-        public static ListNode Fuck(ListNode head, int n)
+        public static ListNode Func(ListNode head, int n)
         {
             ListNode node = head;  ///感觉没写好
             int count = 0;

@@ -8,7 +8,7 @@ namespace Algorithm.Code
     /// </summary>
     public class Solution_15
     {
-        public static IList<IList<int>> fuck(int[] nums)
+        public static IList<IList<int>> Func(int[] nums)
         {
             List<IList<int>> result = new List<IList<int>>();
             if (nums.Length < 3)

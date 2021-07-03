@@ -16,11 +16,11 @@ namespace Algorithm.Code.LeetCode.simple
             var result = new List<string>();
             for(int i=0;i<=num;i++)
             {
-                var fuck = Cal(Hours, num-i,11);
-                var shit = Cal(Minus, i,59);
-                foreach (var hour in fuck)
+                var Func = Cal(Hours, num-i,11);
+                var SpecialS = Cal(Minus, i,59);
+                foreach (var hour in Func)
                 {
-                    foreach (var minu in shit)
+                    foreach (var minu in SpecialS)
                     {
                         if (minu < 10) result.Add($"{hour}:0{minu}");
                         else result.Add($"{hour}:{minu}");

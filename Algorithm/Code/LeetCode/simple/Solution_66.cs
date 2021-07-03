@@ -14,7 +14,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     class Solution_66
     {
-        public static int[] Fuck(int[] digits)
+        public static int[] Func(int[] digits)
         {
             List<int> result =new List<int>(digits);
             for (int i= result.Count-1;i>=0;i--)

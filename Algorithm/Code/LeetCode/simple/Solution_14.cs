@@ -11,7 +11,7 @@ namespace Algorithm.Code
     /// </summary>
     public class Solution_14
     {
-        public static string fuck(string[] strs)
+        public static string Func(string[] strs)
         {
             int minLength = int.MaxValue;
             if(strs.Length==0)

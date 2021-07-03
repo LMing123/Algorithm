@@ -9,7 +9,7 @@ namespace Algorithm.Code.LeetCode.simple
     /// </summary>
     class Solution_69
     {
-        public static int Fuck(int x)
+        public static int Func(int x)
         {
             double a = 1, acc = 0.1;
             double result = (x / a + a) / 2;

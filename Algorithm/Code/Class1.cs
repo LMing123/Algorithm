@@ -14,7 +14,7 @@ namespace Algorithm.Code
     }
     class Class1
     {
-        public static int Fuck(string s)
+        public static int Func(string s)
         {
             string tem = s;
             int count = 0;
@@ -30,7 +30,7 @@ namespace Algorithm.Code
             return count;
         }
         
-        public static string Shit()
+        public static string SpecialS()
         {
             Model model_one = new Model();
             Model model_two = new Model();

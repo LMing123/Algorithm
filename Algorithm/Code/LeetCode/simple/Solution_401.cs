@@ -17,12 +17,12 @@ namespace Algorithm.Code.LeetCode.simple
 
             for(int i=0;i<=num;i++)
             {
-                var fuck = Cal(Hours, num-i,11);
-                var shit = Cal(Minus, i,59);
+                var Func = Cal(Hours, num-i,11);
+                var SpecialS = Cal(Minus, i,59);
                 var sb = new StringBuilder();
-                foreach (var hour in fuck)
+                foreach (var hour in Func)
                 {
-                    foreach (var minu in shit)
+                    foreach (var minu in SpecialS)
                     {
                         if (minu < 10) result.Add($"{hour}:0{minu}");
                         else result.Add($"{hour}:{minu}");

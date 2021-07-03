@@ -8,14 +8,14 @@ namespace Algorithm.Code.LeetCode.simple
     {
         public static bool ContainsDuplicate(int[] nums)
         {
-            HashSet<int> shit = new HashSet<int>();
+            HashSet<int> SpecialS = new HashSet<int>();
             for(int i=0;i<nums.Length;i++)
             {
-                if(shit.Contains(nums[i]))
+                if(SpecialS.Contains(nums[i]))
                 {
                     return true;
                 }
-                shit.Add(nums[i]);
+                SpecialS.Add(nums[i]);
             }
             return false;
         }

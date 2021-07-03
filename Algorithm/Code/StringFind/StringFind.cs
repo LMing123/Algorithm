@@ -14,24 +14,24 @@ namespace Algorithm.Code.StringFind
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="fuck">original</param>
-        /// <param name="shit">matched</param>
+        /// <param name="Func">original</param>
+        /// <param name="SpecialS">matched</param>
         /// <returns></returns>
-        public static (bool, int) RabinKarp(string fuck, string shit)
+        public static (bool, int) RabinKarp(string Func, string SpecialS)
         {
 
-            int originalLength = fuck.Length;
-            int matchLength = shit.Length;
-            int shitHash = HashString(shit);
-            int fuckHash = HashString(fuck.Substring(0,matchLength));
+            int originalLength = Func.Length;
+            int matchLength = SpecialS.Length;
+            int SpecialSHash = HashString(SpecialS);
+            int FuncHash = HashString(Func.Substring(0,matchLength));
             for(int i=0;i<originalLength-matchLength+1;i++)
             {
-                if(shitHash==fuckHash)
+                if(SpecialSHash==FuncHash)
                 {
                     int j = i, k = 0;
                     for (;j<i+matchLength;j++,k++)
                     {
-                        if(shit[k]!=fuck[j])
+                        if(SpecialS[k]!=Func[j])
                         {
                             break;
                         }
@@ -43,7 +43,7 @@ namespace Algorithm.Code.StringFind
                 {
                     if(i< originalLength - matchLength)
                     {
-                        fuckHash = MAXHASH * (fuckHash - (int)Math.Pow(MAXHASH, matchLength - 1) * CharConvert(fuck[i])) + CharConvert(fuck[i + matchLength]);
+                        FuncHash = MAXHASH * (FuncHash - (int)Math.Pow(MAXHASH, matchLength - 1) * CharConvert(Func[i])) + CharConvert(Func[i + matchLength]);
                     }
                 }
  

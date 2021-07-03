@@ -11,7 +11,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public partial class Solution_20
     {
-        public static bool Fuck(string s)
+        public static bool Func(string s)
         {
             bool flag = true;
             Stack<char> stack = new Stack<char>();

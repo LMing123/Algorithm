@@ -18,7 +18,7 @@ namespace Algorithm.Code.LeetCode.simple
             public ListNode(int x) { val = x; }
         }
         
-        public static ListNode Fuck(ListNode head)
+        public static ListNode Func(ListNode head)
         {
             if (head == null)
                 return head;

@@ -40,13 +40,13 @@ namespace Algorithm.Code.LeetCode.simple
 
         public static bool IsPalindrome1(ListNode head)
         {
-           return _Shit(ref head, head);
+           return _SpecialS(ref head, head);
         }
 
-        private static bool _Shit(ref ListNode head, ListNode rear)
+        private static bool _SpecialS(ref ListNode head, ListNode rear)
         {
             if (rear == null) return true;
-            var result= _Shit(ref head, rear.next)&&rear.val==head.val;
+            var result= _SpecialS(ref head, rear.next)&&rear.val==head.val;
             head = head.next;
             return result;
         }

@@ -9,12 +9,12 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_38
     {
-        public static string Fuck(int n)
+        public static string CountAndSay(int n)
         {
             if (n == 1)
                 return "1";
             StringBuilder sb = new StringBuilder();
-            string s = Fuck(n - 1);
+            string s = CountAndSay(n - 1);
             var tem_c = s[0];
             int count = 0;
             for (int i = 0; i < s.Length; i++)

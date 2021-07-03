@@ -11,13 +11,13 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_27
     {
-        public static int Fuck(ref int[] nums,int val)
+        public static int RemoveElement(ref int[] nums,int val)
         {
             int length = nums.Length;
             if (length == 0)
                 return 0;
             length = 0;
-            int shit = nums[0];
+            int s = nums[0];
             for(int i=0;i<nums.Length;i++)
             {
                 if(nums[i]!=val)

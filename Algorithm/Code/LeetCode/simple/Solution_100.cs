@@ -34,13 +34,13 @@
             return (p, q);
         }
 
-        public static bool Fuck(TreeNode p, TreeNode q)
+        public static bool Func(TreeNode p, TreeNode q)
         {
             if(p!=null&&q!=null)
             {
                 if (p.val == q.val)
                 {
-                    if (Fuck(p.left, q.left) && Fuck(p.right, q.right))
+                    if (Func(p.left, q.left) && Func(p.right, q.right))
                         return true;
                     else
                         return false;

@@ -9,11 +9,11 @@ namespace Algorithm.Code.LeetCode
     public class Solution_32
     {
         /// <summary>
-        /// fuck 搁置
+        /// Func 搁置
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static int Fuck(string s)
+        public static int Func(string s)
         {
             List<string> list = new List<string>();
             int start = 0;
@@ -40,9 +40,9 @@ namespace Algorithm.Code.LeetCode
 
             return 0;
         }
-        public static int Old_Fuck(string s)
+        public static int Old_Func(string s)
         {
-            Stack<char> shit = new Stack<char>();         
+            Stack<char> SpecialS = new Stack<char>();         
             
             int result = 0;
             int count = 0;
@@ -51,7 +51,7 @@ namespace Algorithm.Code.LeetCode
                 bool fail = false;
                 if (s[i] == '(')
                 {
-                    shit.Push(s[i]);
+                    SpecialS.Push(s[i]);
                     i++;
                 }
                 else
@@ -63,13 +63,13 @@ namespace Algorithm.Code.LeetCode
                             //count =0;
                             break;
                         }
-                        if(shit.Count==0)
+                        if(SpecialS.Count==0)
                         {
                             i++;
                             fail = true;
                             break;
                         }
-                        shit.Pop();
+                        SpecialS.Pop();
                         count += 2;
                         i++;
                     }

@@ -14,7 +14,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     class Solution_58
     {
-        public static int Fuck(string s)
+        public static int Func(string s)
         {
             var words = s.Split();
             string final="";

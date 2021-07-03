@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
-    class fuck
+    class Func
     {
-        static void shit(string[] args)
+        static void SpecialS(string[] args)
         {
             int n = int.Parse(Console.ReadLine().Trim());//数量
             int m = int.Parse(Console.ReadLine().Trim());// 容量

@@ -8,12 +8,12 @@ namespace Algorithm.Code
 {
     class RecursionArrange
     {
-        public static List<string> Fuck(List<string> s)
+        public static List<string> Func(List<string> s)
         {
-            return Shit(s);
+            return SpecialS(s);
         }
 
-        static List<string> Shit(List<string> s)
+        static List<string> SpecialS(List<string> s)
         {
             if (s.Count == 1)
                 return s;
@@ -23,7 +23,7 @@ namespace Algorithm.Code
                 // List<string> tem = new List<string>(s);
                 //tem.RemoveAt(i);
                 var tem = s.Where((x, y) => y != i).ToList();
-                var query=Shit(tem);
+                var query=SpecialS(tem);
                 foreach(var word in query)
                 {
                     var tem_word = s[i] + word;

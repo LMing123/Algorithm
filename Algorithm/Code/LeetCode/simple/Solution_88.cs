@@ -5,7 +5,7 @@
     /// </summary>
     class Solution_88
     {
-        public static void Fuck(ref int[] nums1, int m, int[] nums2, int n)
+        public static void Func(ref int[] nums1, int m, int[] nums2, int n)
         {
             int length = m;
             int j = 0;

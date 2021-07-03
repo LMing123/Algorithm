@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithm.Code.LeetCode.FUCK
+namespace Algorithm.Code.LeetCode.Func
 {
 
     class Solution_720

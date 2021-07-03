@@ -12,7 +12,7 @@ namespace Algorithm.Code.LeetCode.simple
     /// </summary>
     class Solution_67
     {
-        public static string Fuck(string  a,string b)
+        public static string Func(string  a,string b)
         {
             if (a.Length > b.Length)
             {

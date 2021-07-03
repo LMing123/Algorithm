@@ -11,33 +11,33 @@ namespace Algorithm.Code
     /// </summary>
     class Solution_8
     {
-        public int fuck { get; set; }
-        private int holy_shit1;
-        public int shit
+        public int Func { get; set; }
+        private int holy_SpecialS1;
+        public int SpecialS
         {
-            get => holy_shit1;
+            get => holy_SpecialS1;
             set
             {
-                holy_shit1 = value;
+                holy_SpecialS1 = value;
             }
         }
-        public static int holy_shit()
+        public static int holy_SpecialS()
         {
-            string fuck = Console.ReadLine();
-            if (string.IsNullOrWhiteSpace(fuck))
+            string Func = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(Func))
             {
                 return 0;
             }
-            else if (fuck.Length == 1 && (fuck[0] < '0' || fuck[0] > '9'))
+            else if (Func.Length == 1 && (Func[0] < '0' || Func[0] > '9'))
             {
                 return 0;
             }
 
-            int length = fuck.Length;
+            int length = Func.Length;
             int i = 0;
             while (i < length)
             {
-                if (fuck[i] != ' ')
+                if (Func[i] != ' ')
                 {
                     break;
                 }
@@ -46,36 +46,36 @@ namespace Algorithm.Code
                     i++;
                 }
             }
-            string shit = fuck.Substring(i, length - i);
-            if (shit.Length == 1 && (shit[0] < '0' || shit[0] > '9'))
+            string SpecialS = Func.Substring(i, length - i);
+            if (SpecialS.Length == 1 && (SpecialS[0] < '0' || SpecialS[0] > '9'))
             {
                 return 0;
             }
 
-            if (string.IsNullOrWhiteSpace(shit))
+            if (string.IsNullOrWhiteSpace(SpecialS))
             {
                 return 0;
             }
-            if (shit.Length > 1 && (shit[0] < '0' || shit[0] > '9') && (shit[1] < '0' || shit[1] > '9'))
+            if (SpecialS.Length > 1 && (SpecialS[0] < '0' || SpecialS[0] > '9') && (SpecialS[1] < '0' || SpecialS[1] > '9'))
             {
                 return 0;
             }
-            else if (shit[0] == '+')
+            else if (SpecialS[0] == '+')
             {
-                shit = shit.Substring(1);
+                SpecialS = SpecialS.Substring(1);
             }
             int j = 0;
-            if ((shit[j] < '0' || shit[j] > '9') && (shit[0] != '-' && shit[0] != '+'))
+            if ((SpecialS[j] < '0' || SpecialS[j] > '9') && (SpecialS[0] != '-' && SpecialS[0] != '+'))
             {
                 return 0;
             }
-            if (shit[0] == '-')
+            if (SpecialS[0] == '-')
             {
                 j = 1;
-                while (j < shit.Length)
+                while (j < SpecialS.Length)
                 {
 
-                    if ((shit[j] >= '0' && shit[j] <= '9'))
+                    if ((SpecialS[j] >= '0' && SpecialS[j] <= '9'))
                     {
                         j++;
                     }
@@ -88,10 +88,10 @@ namespace Algorithm.Code
             }
             else
             {
-                while (j < shit.Length)
+                while (j < SpecialS.Length)
                 {
 
-                    if ((shit[j] >= '0' && shit[j] <= '9'))
+                    if ((SpecialS[j] >= '0' && SpecialS[j] <= '9'))
                     {
                         j++;
                     }
@@ -103,20 +103,20 @@ namespace Algorithm.Code
                 }
             }
 
-            shit = shit.Substring(0, j);
-            int holy_fuck = 0;
-            if ((shit[shit.Length - 1] < '0' || shit[shit.Length - 1] > '9'))
+            SpecialS = SpecialS.Substring(0, j);
+            int holy_Func = 0;
+            if ((SpecialS[SpecialS.Length - 1] < '0' || SpecialS[SpecialS.Length - 1] > '9'))
             {
                 return 0;
             }
             try
             {
-                holy_fuck = int.Parse(shit);
-                return holy_fuck;
+                holy_Func = int.Parse(SpecialS);
+                return holy_Func;
             }
             catch (OverflowException)
             {
-                if (shit[0] != '-')
+                if (SpecialS[0] != '-')
                 {
                     return int.MaxValue;
                 }
@@ -126,7 +126,7 @@ namespace Algorithm.Code
             {
                 return 0;
             }
-            return holy_fuck;
+            return holy_Func;
         }
     }
 }

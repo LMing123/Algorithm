@@ -9,7 +9,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     class Solution_35
     {
-        public static int Fuck(int[] nums, int target)
+        public static int SearchInsert(int[] nums, int target)
         {
             return On(nums, target);
         }

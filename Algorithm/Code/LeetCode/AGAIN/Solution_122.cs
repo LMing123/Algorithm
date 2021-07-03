@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Algorithm.Code.LeetCode.Fuck
+namespace Algorithm.Code.LeetCode.Func
 {
     /// <summary>
     /// 

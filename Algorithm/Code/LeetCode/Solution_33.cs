@@ -16,7 +16,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_33
     {
-        public static int Fuck(int[] nums, int target)
+        public static int Func(int[] nums, int target)
         {
             int position =( nums.Length - 1 )/ 2;
             int end = nums.Length - 1;

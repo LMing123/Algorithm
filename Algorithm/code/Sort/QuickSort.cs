@@ -89,14 +89,14 @@ namespace Algorithm.Code
 
         }
 
-        public static int[] Fuck(ref int[] nums,int left,int right)
+        public static int[] Func(ref int[] nums,int left,int right)
         {
             int[] result = nums;
             if (left >= right)
                 return result;
             int position=Sort(ref result, left, nums.Length - 1);
-            Fuck(ref result, left, position - 1);
-            Fuck(ref result,  position + 1,right);
+            Func(ref result, left, position - 1);
+            Func(ref result,  position + 1,right);
             return result;
         }
     }

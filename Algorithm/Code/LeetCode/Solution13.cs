@@ -5,81 +5,81 @@
     /// </summary>
     public class Solution13
     {
-        public static int fuck(string s)
+        public static int Func(string s)
         {
             int length = s.Length;
-            int shit = 0;
+            int SpecialS = 0;
             for (int i = 0; i < length; i++)
             {
                 if (s[i] == 'M')
                 {
-                    shit += 1000;
+                    SpecialS += 1000;
                 }
                 else if (s[i] == 'D')
                 {
-                    shit += 500;
+                    SpecialS += 500;
                 }
                 else if (s[i] == 'C')
                 {
                     if (s[i] == 'C' && (i + 1 <= length - 1) && s[i + 1] == 'M')
                     {
-                        shit += 900;
+                        SpecialS += 900;
                         i = i + 1;
                     }
                     else if (s[i] == 'C' && (i + 1 <=length - 1) && s[i + 1] == 'D')
                     {
-                        shit += 400;
+                        SpecialS += 400;
                         i++;
                     }
                     else
                     {
-                        shit += 100;
+                        SpecialS += 100;
                     }
                 }
                 else if (s[i] == 'L')
                 {
-                    shit += 50;
+                    SpecialS += 50;
                 }
                 else if (s[i] == 'X')
                 {
                     if ((i + 1 <= length - 1) && s[i + 1] == 'C')
                     {
-                        shit += 90;
+                        SpecialS += 90;
                         i = i + 1;
                     }
                     else if ((i + 1 <= length - 1) && s[i + 1] == 'L')
                     {
-                        shit += 40;
+                        SpecialS += 40;
                         i++;
                     }
                     else
                     {
-                        shit += 10;
+                        SpecialS += 10;
                     }
                 }
                 else if (s[i] == 'V')
                 {
-                    shit += 5;
+                    SpecialS += 5;
                 }
                 else
                 {
                     if ((i + 1 <= length - 1) && s[i + 1] == 'X')
                     {
-                        shit += 9;
+                        SpecialS += 9;
                         i = i + 1;
                     }
                     else if ((i + 1 <= length - 1) && s[i + 1] == 'V')
                     {
-                        shit += 4;
+                        SpecialS += 4;
                         i++;
                     }
                     else
                     {
-                        shit += 1;
+                        SpecialS += 1;
                     }
                 }
             }
-            return shit;
+            return SpecialS;
         }
             
         }

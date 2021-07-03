@@ -8,17 +8,17 @@ namespace Algorithm.Code.LeetCode.simple
     {
         public static bool ContainsNearbyDuplicate(int[] nums, int k)
         {
-            Dictionary<int, int> shit = new Dictionary<int, int>();
+            Dictionary<int, int> SpecialS = new Dictionary<int, int>();
             for(int i=0;i<nums.Length;i++)
             {
-                if(shit.ContainsKey(nums[i]))
+                if(SpecialS.ContainsKey(nums[i]))
                 {
-                    if (Math.Abs(shit[nums[i]] - i) <= k) return true;
-                    else  shit[nums[i]] = i;
+                    if (Math.Abs(SpecialS[nums[i]] - i) <= k) return true;
+                    else  SpecialS[nums[i]] = i;
                 }
                 else
                 {
-                    shit.Add(nums[i], i);
+                    SpecialS.Add(nums[i], i);
                 }                
             }
             return false;

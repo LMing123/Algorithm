@@ -16,12 +16,12 @@ namespace Algorithm.Code.LeetCode.simple
             Queue<TreeNode> queue = new Queue<TreeNode>();
             queue.Enqueue(root);
             List<IList<int>> lists = new List<IList<int>>();
-            Shit(queue, lists);
+            SpecialS(queue, lists);
             lists.Reverse();
             return (IList<IList<int>>)lists;
         }
 
-        public static void Shit(Queue<TreeNode> queue, List<IList<int>> lists)
+        public static void SpecialS(Queue<TreeNode> queue, List<IList<int>> lists)
         {
             if (queue.Count == 0) return;
             var list = new List<int>();
@@ -38,7 +38,7 @@ namespace Algorithm.Code.LeetCode.simple
             }
             if (list.Count != 0)
                 lists.Add(list);
-            Shit(queue2, lists);
+            SpecialS(queue2, lists);
         }
 
     }

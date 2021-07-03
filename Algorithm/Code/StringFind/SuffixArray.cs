@@ -87,7 +87,7 @@ namespace Algorithm.Code.StringFind
 
 
     }
-    public static class Shit
+    public static class SpecialS
     {
         public static int GetCharHash(this string s, int i) => CharConvert(s[i - 1]);
         private static int CharConvert(char c) => (int)c - 'a'+1;

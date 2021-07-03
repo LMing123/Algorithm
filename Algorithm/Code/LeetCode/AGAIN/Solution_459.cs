@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Algorithm.Code.LeetCode.FUCK
+namespace Algorithm.Code.LeetCode.Func
 {
     class Solution_459
     {

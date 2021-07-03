@@ -13,12 +13,12 @@ namespace Algorithm.Code.LeetCode.simple
             IList<string> list = new List<string>();
             string s = root.val.ToString();
             if (root.left == null && root.right == null) list.Add(s);
-            if (root.left != null) Fuck(ref list, s, root.left);
-            if (root.right != null) Fuck(ref list, s, root.right);
+            if (root.left != null) Func(ref list, s, root.left);
+            if (root.right != null) Func(ref list, s, root.right);
             return list;
         }
 
-        void Fuck(ref IList<string>list,string s,TreeNode node)
+        void Func(ref IList<string>list,string s,TreeNode node)
         {
             s = s + $"->{node.val}";
             if (node.left == null && node.right == null)
@@ -26,8 +26,8 @@ namespace Algorithm.Code.LeetCode.simple
                 list.Add(s);
                 return;
             }
-            if (node.left != null) Fuck(ref list, s, node.left);
-            if(node.right!=null) Fuck(ref list, s, node.right);
+            if (node.left != null) Func(ref list, s, node.left);
+            if(node.right!=null) Func(ref list, s, node.right);
 
 
         }

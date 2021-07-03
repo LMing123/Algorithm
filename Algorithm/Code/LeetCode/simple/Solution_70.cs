@@ -19,7 +19,7 @@ namespace Algorithm.Code.LeetCode.simple
             { 0,1},
             {1,1 }
         };
-        public static int Fuck(int n)
+        public static int Func(int n)
         {
             if (n==0||n==1)
                 return result[n];

@@ -11,7 +11,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     public class Solution_34
     {
-        public static int[] Fuck(int[] nums, int target)
+        public static int[] Func(int[] nums, int target)
         {
             int start = 0;
             int end = nums.Length - 1;
@@ -29,14 +29,14 @@ namespace Algorithm.Code.LeetCode
                 }
                 else
                 {
-                    int fuck1 = i;
-                    int fuck2 = i;
-                    while (fuck1-1 >= 0 && nums[fuck1-1] == target)
-                        fuck1--;
-                    while (fuck2+1 < nums.Length && nums[fuck2+1] == target)
-                        fuck2++;
-                    result[0] = fuck1;
-                    result[1] = fuck2;
+                    int Func1 = i;
+                    int Func2 = i;
+                    while (Func1-1 >= 0 && nums[Func1-1] == target)
+                        Func1--;
+                    while (Func2+1 < nums.Length && nums[Func2+1] == target)
+                        Func2++;
+                    result[0] = Func1;
+                    result[1] = Func2;
                     break;
                 }
             }

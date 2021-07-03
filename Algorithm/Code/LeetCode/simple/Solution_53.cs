@@ -13,7 +13,7 @@ namespace Algorithm.Code.LeetCode
     /// </summary>
     class Solution_53
     {
-        public static int Fuck(int[] nums)
+        public static int Func(int[] nums)
         {
             if (nums.Length == 0)
                 return 0;
