@@ -19,18 +19,19 @@ namespace Algorithm
         static void Main(string[] args)
         {
             
-            var g = new Solution_43();
-          //  Solution_43.Sum("321", "4");
-           // var result=g.CombinationSum(new int[] { 2, 3, 6, 7 },7);
-          //  var result=g.Multiply("456", "123");
-           // var result=g.Multiply( "123456789", "987654321");
-            var result=g.Multiply("987654321", "123456789");
-            Console.WriteLine(result);
+            var g = new Solution_45();
+            //  Solution_43.Sum("321", "4");
+           // var result = g.Jump(new int[] { 2, 3, 1, 1, 4 });
+            var result = g.Jump(new int[] { 5,9,3,2,1,0,2,3,3,1,0,0});
+            //  var result=g.Multiply("456", "123");
+            // var result=g.Multiply( "123456789", "987654321");
+            //var result=g.Multiply("987654321", "123456789");
+            // Console.WriteLine(result);
             //var result=g.Trap(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
 
 
-            //var lists = new int[] { 2, 3, 1, 4, 5, 7, 6, 9, 8, 4, 22, 66, 44 };
-            //QuickSort.Sort2(ref lists, 0, lists.Length - 1);
+            var lists = new int[] { 2, 3, 1, 4, 5, 7, 6, 9, 8, 4, 22, 66, 44 };
+            QuickSort.Sort3(ref lists, 0, lists.Length - 1);
 
             //int[][] list = new int[5][] { new[] { 2, 3, 4 }, new[] { 5, 6, 7 }, new[] { 8, 9, 10 }, new[] { 11, 12, 13 }, new[] { 14, 15, 16 } };
             ////int[] list1 = new int[] { 2, 2, 3, 2, 4};
